@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "754518791212",
+    "project_id": "fininfocomtask",
+    "storage_bucket": "fininfocomtask.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754518791212:android:6a3b6838c52524fe5f2d89",
+        "android_client_info": {
+          "package_name": "com.d.fininfocomtask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754518791212-kp7oga6t48v1k0b5sjph537mip6qo78d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI1eEyNiEzZy8QVpW6pX1KVHUboFZoHgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754518791212-kp7oga6t48v1k0b5sjph537mip6qo78d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
