@@ -32,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText( getApplicationContext(),
                                 "Redirecting...", Toast.LENGTH_SHORT ).show();
                         Intent intent = new Intent( getApplicationContext(), MainActivity.class );
+                        intent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TOP );
                         startActivity( intent );
                     } else {
                         Toast.makeText( getApplicationContext(), "Password must be 7 Characters with 1UpperCase Alphabet and 1SpecialCharacter and Numeric", Toast.LENGTH_SHORT ).show();

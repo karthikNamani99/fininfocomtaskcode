@@ -9,9 +9,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name=".RealmDb"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".actvities.RegistrationActivty"></activity>
-        <activity android:name=".actvities.UserList" />
+        <activity android:name=".actvities.UserListAddActivity"></activity>
         <activity android:name=".actvities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

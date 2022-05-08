@@ -1,29 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:background="#B2D576"
-    android:orientation="vertical"
-    tools:context=".actvities.UserList">
+    android:orientation="vertical">
 
-    <Button
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="#CCE167"
+        android:layout_height="55dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="User LIst"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center|start"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_35"
+        android:layout_margin="@dimen/dimen_10"
+        android:paddingLeft="@dimen/dimen_14"
+        android:paddingRight="@dimen/dimen_14"
+        android:textColorHint="#8000"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_below="@+id/toolbar"
+        android:drawableRight="@drawable/ic_search_black_24dp"
+        android:background="@drawable/btn_shape_gradient"
+        android:hint="Search by Name or Date or Age" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@color/white"
-        android:text="Add User"
-        android:textColor="@color/black" />
+        android:layout_margin="10dp"
+        android:src="@drawable/add1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_below="@+id/editTextSearch"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</LinearLayout>
+</RelativeLayout>

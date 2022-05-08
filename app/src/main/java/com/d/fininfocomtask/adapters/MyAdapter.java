@@ -10,18 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.d.fininfocomtask.R;
+import com.d.fininfocomtask.models.DataModal;
 import com.d.fininfocomtask.models.User;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     Context context;
 
-    ArrayList<User> list;
+//    ArrayList<User> list;
 
+    private List<DataModal> list;
 
-    public MyAdapter(Context context, ArrayList<User> list) {
+    public MyAdapter(Context context, List<DataModal> list) {
         this.context = context;
         this.list = list;
     }
@@ -36,11 +39,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        User user = list.get( position );
+        DataModal user = list.get(position);
 
-        holder.uName.setText( user.getUserName() );
-        holder.uAge.setText( user.getUserAge() );
-        holder.uCity.setText( user.getUserCity() );
+
+        holder.uName.setText( user.getuName() );
+        holder.uAge.setText( user.getuAge() );
+        holder.uCity.setText( user.getuCity() );
 
     }
 
